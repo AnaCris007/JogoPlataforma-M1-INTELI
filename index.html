@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Epic Adventures</title> <!-- Título da página no navegador -->
+    <!-- Carrega o site do Phaser -->
+    <script src="https://cdn.jsdelivr.net/npm/phaser@3.55.2/dist/phaser.min.js"></script>
+    <!-- Carrega os arquivos, as cenas, que a gente vai usa no jogo -->
+    <script src="src/menu.js"></script> 
+    <script src = 'src/fase1.js'></script>
+    <script src = 'src/comoJogar.js'></script>
+    <script src = 'src/perdeu.js'></script>
+    <script src = 'src/ganhou.js'></script>
+
+    <style>
+        /* Centraliza o conteúdo da página no centro da tela */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0; /* Remove margens da página */
+        }
+    </style>
+
+    <script>
+    // Define as configurações do jogo, ex: largura e altura da tela
+    const config = {
+        type: Phaser.AUTO,
+        width: 900,
+        height: 640,
+        //Adiciona física ao jogo
+        physics: { 
+            default: 'arcade',
+            arcade: {
+                gravity: {y: 400},
+                debug: false // Desativa o modo de depuração (não vai mostrar as caixas de colisão)
+            }
+        },
+        //Cenas que vão ser usadas no jogo
+        scene: [menu, comoJogar, fase1, perdeu, ganhou]
+    };
+    
+    // Inicia o jogo com base nas configurações que a gente definiu antes
+    const game = new Phaser.Game(config);
+    </script>
+
+</head>
+<body>
+</body>
+</html>
