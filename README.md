@@ -16,9 +16,10 @@ O objetivo é coletar todos os diários espalhados pelo cenário enquanto enfren
 - **Phaser**: Framework utilizado para desenvolver o jogo.
 - **JavaScript**: Linguagem de programação principal.
 - **GitHub Pages**: Hospedagem da versão jogável do jogo.
+- **HTML**: Para estruturar a página e integrar o jogo no navegador.
 
 ## Link para a Versão Jogável
 
 Você pode jogar o jogo diretamente na web através do seguinte link:  
-
+https://anacris007.github.io/JogoPlataforma-M1-INTELI/
 
